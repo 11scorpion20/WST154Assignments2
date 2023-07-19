@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONE PIECE</title>
+<head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: fantasy;
+      font-weight: 200;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid rgb(95, 30, 11);
+      font-size: x-large;
+    }
+    
+    tr:nth-child(even) {
+      background-color: rgb(194, 187, 187);
+    }
+    
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .image {
+        width: 200px;
+        height: 130px;
+    }
+    .table-container {
+      width: 700px;
+      margin: 0 auto;
+    }
+    div {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    div:hover {
+      background-color: red;
+    }
+  </style>
+  <script>
+    function greet() {
+      var name = prompt("Please enter your name:");
+      if (name !== null) {
+        alert("Hello, " + name + "! Welcome to ONE PIECE!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Straw Hat Pirate</h1>
+  <div class="table-container">
+  <table>
+    <tr>
+        <th>Photo</th>
+      <th>Name</th>
+      <th>Devil Fruit</th>
+      <th>Power</th>
+    </tr>
+    <tr>
+        <td><img src="/Image/luffy2.jpg" alt="Image" class="image"></td>
+      <td>Luffy</td>
+      <td>GumGum Fruit</td>
+      <td>Elasticity with unkown limits</td>
+    </tr>
+    <tr>
+        <td><img src="/Image/zoro.jpg" alt="Image" class="image"></td>
+      <td>Zoro</td>
+      <td>None</td>
+      <td>3 Sword Style</td>
+    </tr>
+    <tr>
+        <td><img src="/Image/sanji.jpg" alt="Image" class="image"></td>
+      <td>Sanji</td>
+      <td>None</td>
+      <td>Super Human Strength</td>
+    </tr>
+  </div>
+  </table>
+  <button onclick="greet()">Click me</button>
+</body>
+</html>
